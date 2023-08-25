@@ -1,14 +1,16 @@
 import PropTypes from "prop-types";
+import {useState} from "react";
 
 export default function GetLocation(props) {
-    let lon,lat;
+    const [lon, setLon] = useState(null);
+    const [lat, setLat] = useState(null);
+
     function handleLonChange(event) {
-        lon = (event.target.value);
+        setLon(event.target.value);
     }
 
     function handleLatChange(event) {
-        lat = (event.target.value);
-
+        setLat(event.target.value);
     }
 
     return (
