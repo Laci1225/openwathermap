@@ -2,10 +2,11 @@
   padding: 0 2rem;
   text-align: center;
 }
-.left-side{
+.left-side {
   display: flex;
-  width: 30%;
+  justify-content: center;
   align-items: center;
+  width: 30%;
   height: 100vh;
 }
 .all-side{
@@ -19,7 +20,16 @@
   flex-direction: column;
 }
 .title{
-  justify-content: center;
   width: 100%;
+  min-height: 100px;
   font-weight: bolder;
 }
+.left-side label{
+  margin: 1em;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+

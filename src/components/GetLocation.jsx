@@ -15,10 +15,14 @@ export default function GetLocation(props) {
 
     return (
         <div>
-            <label htmlFor="lon">Longitude:</label>
-            <input id="lon" type="text" onChange={handleLonChange}/>
-            <label htmlFor="lat">Latitude</label>
-            <input id="lat" type="text" onChange={handleLatChange}/>
+            <div className="input-container">
+                <label htmlFor="lon">Longitude:</label>
+                <input id="lon" type="text" onChange={handleLonChange}/>
+            </div>
+            <div className="input-container">
+                <label htmlFor="lat">Latitude</label>
+                <input id="lat" type="text" onChange={handleLatChange}/>
+            </div>
             <div>
                 <button onClick={() => {
                     props.setLon(lon);
